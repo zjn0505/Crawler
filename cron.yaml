@@ -1,0 +1,8 @@
+cron:
+- description: daily msn apps checker
+  url: /refresh
+  schedule: every 24 hours
+
+- description: daily departify cacher
+  url: /departify/refresh
+  schedule: every 24 hours

@@ -1,0 +1,18 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /departify
+  script: departify.app
+  secure: always
+
+- url: /departify/.*
+  script: departify.app
+  login: admin
+
+- url: /news
+  script: news_watcher.app
+ 
+- url: /.*
+  script: main.app
